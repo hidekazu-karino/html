@@ -10,11 +10,15 @@
         .mycolumn {
             border: solid
         }
+
+        .mycontainer {
+            margin-bottom: 10px
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mycontainer">
 
         <!-- columns should be the immediate child of a .row -->
         <div class="row">
@@ -37,6 +41,34 @@
             <div class="one-half column mycolumn">1/2</div>
             <div class="one-half column mycolumn">1/2</div>
         </div>
-
+    </div>
+    <div class="contaier mycontainer">
+        <div class="three columns">
+            <a class="button" href="#">Anchor button</a>
+        </div>
+        <div class="three columns">
+            <button>Button element</button>
+        </div>
+        <div class="three columns">
+            <input type="submit" value="submit input">
+        </div>
+        <div class="three columns">
+            <input type="button" value="button input">
+        </div>
+    </div>
+    <div class="contaier mycontainer">
+        <!--button-primary class is filled with blue-->
+        <div class="three columns">
+            <a class="button button-primary" href="#">Anchor button</a>
+        </div>
+        <div class="three columns">
+            <button class="button-primary">Button element</button>
+        </div>
+        <div class="three columns">
+            <input class="button-primary" type="submit" value="submit input">
+        </div>
+        <div class="three columns">
+            <input class="button-primary" type="button" value="button input">
+        </div>
     </div>
 </body>
