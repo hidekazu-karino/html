@@ -49,6 +49,24 @@
             padding: 20px;
             border: solid;
         }
+
+        #left {
+            text-align: left;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        #center {
+            text-align: center;
+            text-decoration: line-through;
+            margin-bottom: 10px;
+        }
+
+        #right {
+            text-align: right;
+            text-decoration: overline;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -67,4 +85,10 @@
     <h2>パディング</h2>
     <div id="padding">ここは上下左右に20pxのパディングが確保されている</div>
     <div>ここはパディングなし</div>
+    <h2>テキストの装飾</h2>
+    <div style="border: solid">
+        <div id="left">左寄せ＋下線</div>
+        <div id="center">中央寄せ+取り消し線</div>
+        <div id="right">右寄せ＋上線</div>
+    </div>
 </body>
