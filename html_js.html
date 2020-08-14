@@ -9,10 +9,24 @@
         function changeColor() {
             document.getElementById("p1").style.color = "red";
         }
+        function clickBtn5() {
+            const color5 = document.form5.color5;
+
+            if (color5.checked) { //(color5[i].checked === true)と同じ
+                document.getElementById("span5").textContent = "trueです";
+            } else {
+                document.getElementById("span5").textContent = "falseです";
+            }
+        }
     </script>
 </head>
 
 <body>
     <p id="p1" style="color:green">Change color here</p>
     <button type="button" onclick="changeColor()">to red</button>
+    <p>選択した色 <span id="span5"></span></p>
+    <form name="form5">
+        <input type="checkbox" name="color5" value="red" checked> 赤
+    </form>
+    <input type="button" value="ボタン" onclick="clickBtn5()" />
 </body>

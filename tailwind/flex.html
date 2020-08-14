@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        Tailwind CSS flex
+    </title>
+    <link href="https://unpkg.com/tailwindcss@0.3.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="h-width " style="background: #edf2f7;">
+    <section class="flow-root overflow-hidden flex items-center justify-center">
+        <div class="w-screen border shadow flex block">
+            <!-- 左のチャンネル一覧-->
+            <div class="bg-purple-darker text-purple-lighter w-2/12 pb-6">
+                <h1 class="text-white text-xl mb-2 mt-3 px-4 font-sans flex justify-between">
+                    hello
+                </h1>
+                <div class="px-4 mb-2 font-sans">Channels</div>
+                <!-- テキストを左寄せにし，w-fullで横いっぱいに描画することで横いっぱいにクリック可能にする-->
+                <button class="text-left w-full">Click</button>
+            </div>
+            <!-- Chat content(titles) -->
+            <div class="w-1/3 flex flex-col p-6">
+                <h1 class="text-black">Titles</h1>
+                <div>this is titiles of submitted weekly reports</div>
+            </div>
+            <!-- Chat content(Details) -->
+            <div class="w-2/3 flex flex-col p-6">
+                <h1 class="text-black">Details</h1>
+                <div>this is details of submitted weekly reports</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-screen border shadow flex block">
+            hogehoge
+        </div>
+    </section>
+</body>
